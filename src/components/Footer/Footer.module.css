@@ -1,0 +1,17 @@
+.footer {
+    background-color: #000; /* Black background for footer */
+    height: var(--footer-height); /* Set height from variable */
+    margin-top: auto; /* Push to the bottom */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+.navLink {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 1rem; 
+  text-decoration: none; /* Remove underline from links */
+}

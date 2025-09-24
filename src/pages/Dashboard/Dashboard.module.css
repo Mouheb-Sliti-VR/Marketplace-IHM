@@ -1,0 +1,58 @@
+.catalogContainer{
+    margin: 5rem 0;
+}
+
+
+.sliderContainer > div{
+    margin: 2rem auto;
+}
+
+.catalogContainer>h2{
+    text-align: center;
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 4.5rem;
+    position: relative;
+    padding-bottom: 1.25rem;
+    font-family: "HelvNeue", Arial, sans-serif;
+}
+
+.catalogContainer>h2::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 4px;
+    background-color: var(--orange-primary);
+    border-radius: 2px;
+}
+
+.catalogItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.catalogItems a{
+    width: 28%;
+}
+
+.sliderContainer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.sliderContainer button{
+    background-color: #ff7b0000;
+    border: none;
+    font-size: 2.5rem;
+    color: #ff7b00b2;
+}
+
+.sliderContainer button:hover{
+    color: #ff7300fd;
+}

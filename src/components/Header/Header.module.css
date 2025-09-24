@@ -1,0 +1,26 @@
+nav{
+    height: 75px;
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+nav span{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    margin: 10px;
+}
+
+nav a:hover, nav span:hover{
+    color: #dfdfdf;
+}
+
+.brand img{
+    width: 50px;
+}
+
+.brand span{
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,113 @@
+.profileContainer{
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.profileContainer h2{
+    text-align: center;
+    padding: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 1);
+    color: #ff8800ff;
+
+}
+
+.formContainer{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+form{
+    background-color: rgba(0,0,0,0);
+}
+
+.imageInput i{
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    font-size: 1.5rem;
+    background-color: #ff8800ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.imageInput i:hover{
+    background-color: #ff6600ff;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.imageInput{
+    position: relative;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin: auto;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.imageInput img{
+    height: 105%;
+
+}
+
+.inputGroup{
+    margin-bottom: 20px;
+}
+
+.inputGroup label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputGroup input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="file"] {
+  top: 40%;
+  right: 0;
+  opacity: 50%;
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+}
+
+.formContainer button{
+    width: 100%;
+    padding: 12px;
+    background-color: #ff8800ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 30px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.formContainer button:hover{
+    background-color: #ff6600ff;
+    
+}
+
+.formContainer span {
+    color: red;
+    font-size: 0.8rem;
+}

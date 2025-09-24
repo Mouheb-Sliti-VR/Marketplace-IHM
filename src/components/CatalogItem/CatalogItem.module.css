@@ -1,0 +1,95 @@
+.medium {
+    background: linear-gradient(135deg, #ffe2c9 0%, #ac7f5a 100%);
+    color: #000;
+
+}
+
+.medium .glowingText{
+    background: linear-gradient(270deg, #ffc391, #c29067);
+    background-size: 600% 600%;
+    animation: glowBackground 6s ease infinite;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    color: rgb(51, 51, 51);
+}
+
+.high {
+    background: linear-gradient(135deg, #e4e4e4 0%, #6b6b6b 100%);
+    color: #000;
+}
+
+.high .glowingText{
+    background: linear-gradient(270deg, #d4d4d4, #969696);
+    background-size: 600% 600%;
+    animation: glowBackground 6s ease infinite;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    color: rgb(51, 51, 51);
+}
+
+
+.ultra {
+    background: linear-gradient(135deg, #fff6a5 0%, #a89a1a 100%);
+    color: #000;
+}
+
+.ultra .glowingText{
+    background: linear-gradient(270deg, #fff6b8, #a39516);
+    background-size: 600% 600%;
+    animation: glowBackground 6s ease infinite;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    color: rgb(51, 51, 51);
+}
+
+.homePackageOffer {
+    border-radius: 1.5rem;
+    width: 400px;
+    height: 750px;        /* Taller cards */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.homePackageOffer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes glowBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.homePackageOffer > i{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.homePackageOffer > h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0rem 2rem 0rem 2rem;  
+    font-weight: 700;
+}
+
+.homePackageOffer > p {
+    padding: 0rem 2rem 1rem 2rem;
+    height: 120px;
+}
+
+.homePackageOffer li{
+    width: 100%;
+    padding: 1.2rem 1rem 1.2rem 3rem;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.226);
+    font-weight: 500;
+}

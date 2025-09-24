@@ -1,0 +1,39 @@
+.subscriptionItem{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 10px 0;
+    background-color: #ff8800ff;
+    color: white;
+    margin: 10px;
+}
+
+.subscriptionItem:hover {
+    background: linear-gradient(90deg, #ff7300 0%, #ffa600 100%);
+    transform: scale(1.003);
+}
+
+.subscriptionItem i{
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.subscriptionItem h4 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.subscriptionItem p {
+    margin: 5px 0;
+    font-size: .8rem;
+}
+
+.subscriptionItem span {
+    font-size: 0.9rem;
+    color: #3a3a3aff;
+    font-weight: bold;
+}
