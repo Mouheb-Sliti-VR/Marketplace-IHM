@@ -20,7 +20,6 @@ const SubscribeForm: React.FC<{ productItem: BundledProductSpec }> = ({ productI
     const [uploadModelError, setUploadModelError] = React.useState<string>("");
     const [selectedUniverse, setSelectedUniverse] = React.useState<{ UniverseName: string; Thumbnail: string } | null>(null);
     const [total, setTotal] = React.useState<number>(200);
-    const [paymentRef, setPaymentRef] = React.useState<string>("");
     const [displayPaymentModal, setDisplayPaymentModal] = React.useState<boolean>(false);
     const [isLoading, setIsLoading] = React.useState<boolean>(false);
     const [quoteId, setQuoteId] = React.useState<string>("");
@@ -93,7 +92,7 @@ const SubscribeForm: React.FC<{ productItem: BundledProductSpec }> = ({ productI
             setUploadModelError("You must upload at least one model.");
 
         else{
-            let body = { 
+            const body = { 
                 selections:[
                     {
                         offeringId: productItem.id,
@@ -315,7 +314,6 @@ const SubscribeForm: React.FC<{ productItem: BundledProductSpec }> = ({ productI
             <PaymentPortal
                 quoteId={quoteId}
                 total={total + (selectedUniverse ? 200 : 0)}
-                setPaymentRef={setPaymentRef}
                 setDisplayPaymentModal={setDisplayPaymentModal}
                 images={images}
                 videos={videos}

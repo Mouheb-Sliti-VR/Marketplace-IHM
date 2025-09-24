@@ -20,9 +20,8 @@ const PaymentPortal: React.FC<{
     images? : File[];
     videos? : File[];
     models? : File[];
-    setPaymentRef: React.Dispatch<React.SetStateAction<string>>; 
     setDisplayPaymentModal: React.Dispatch<React.SetStateAction<boolean>>;
-}> = ({ total, quoteId, setPaymentRef, setDisplayPaymentModal, images, videos, models }) => {
+}> = ({ total, quoteId, setDisplayPaymentModal, images, videos, models }) => {
     const [cardNumber, setCardNumber] = React.useState<string>("");
     const [cardNumberErr, setCardNumberErr] = React.useState<string>(" ");
     const [expiryDate, setExpiryDate] = React.useState<string>("");
@@ -77,7 +76,7 @@ const PaymentPortal: React.FC<{
         return isValid;
     };
 
-    const loadContent = async (formData: FormData) => {
+    /* const loadContent = async (formData: FormData) => {
 
         // Add images if they exist
         if (images?.length) {
@@ -99,7 +98,7 @@ const PaymentPortal: React.FC<{
                 formData.append(`model`, model);
             });
         }
-    }
+    } */
 
     const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
@@ -143,7 +142,6 @@ const PaymentPortal: React.FC<{
                         }
                     }).then(data => {
                         console.log("Subscription successful:", data);
-                        setPaymentRef("MockedPaymentRef");
                         showAlert('Subscribed successfully', '#6ebb6eff');
                         setDisplayPaymentModal(false);
                     }).catch(error => {

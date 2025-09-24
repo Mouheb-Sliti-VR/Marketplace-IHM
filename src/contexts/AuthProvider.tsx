@@ -1,5 +1,4 @@
-import { createContext, useState, useContext, type ReactNode, use, useEffect } from 'react';
-import React from 'react';
+import { createContext, useState, useContext, type ReactNode, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAlert } from './AlertProvider';
 import LoadingWheel from '../components/LoadingWheel/LoadingWheel';
@@ -13,8 +12,8 @@ type AuthContextType = {
 
 const AuthContext = createContext<AuthContextType>({
   isLoggedIn: false,
-  login: (payload: {email: string, password:string}) => {},
-  register: (payload: {email: string, companyName: string, password: string}) => {},
+  login: () => {},
+  register: () => {},
   logout: () => {},
 });
 

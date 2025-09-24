@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {useAuth } from '../../contexts/AuthProvider';
 import { Link, useNavigate } from 'react-router-dom';
 import style from '../Form.module.css';
@@ -39,7 +39,7 @@ const LoginPage: React.FC = () => {
     setErrors(errs);
     return (!errs.email && !errs.password);
   };
-  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleSubmit = () => {
     console.log('Form submitted:', formData);
 
     if(!validate()) {
